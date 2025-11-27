@@ -19,10 +19,10 @@ class World:
                 tile = self.tiles[y][x]
                 if tile == 1:
                     pygame.draw.rect(self.screen, "green", pygame.Rect(x*32, y*32, 32, 32))#change this to pygame image blit
-                    ##self.screen.blit(pygame.image.load("assets/1.png"), (x*32, y*32))
+                    ##self.screen.blit(pygame.image.load(f"assets/{tile}.png"), (x*32, y*32))tutaj zmiana
                 #--------------------------------------------------------------------------------
                 
         
-    def update(self):
+    def update(self,x,y):
         pass
             
